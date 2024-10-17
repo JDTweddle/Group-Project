@@ -1,0 +1,95 @@
+/fake-uber-app
+│
+├── /frontend                     # Frontend application
+│   ├── /public                   # Public assets (index.html, favicon, etc.)
+│   ├── /src                      # Source files
+│   │   ├── /components           # React components
+│   │   ├── /pages                # React pages
+│   │   ├── /services             # API service calls
+│   │   ├── /styles               # CSS/SCSS styles
+│   │   ├── App.js                # Main App component
+│   │   └── index.js              # Entry point
+│   ├── package.json              # Frontend dependencies and scripts
+│   └── .env                     # Environment variables for frontend
+│
+├── /services                     # Microservices
+│   ├── /user-service             # User service
+│   │   ├── /controllers          # Business logic
+│   │   ├── /models               # Database models
+│   │   ├── /routes               # API routes
+│   │   ├── /middleware           # Middleware functions
+│   │   ├── /tests                # Unit and integration tests
+│   │   ├── Dockerfile            # Docker configuration
+│   │   ├── package.json          # Service dependencies
+│   │   └── .env                  # Environment variables for user service
+│   │
+│   ├── /product-service          # Product service
+│   │   ├── /controllers          # Business logic
+│   │   ├── /models               # Database models
+│   │   ├── /routes               # API routes
+│   │   ├── /middleware           # Middleware functions
+│   │   ├── /tests                # Unit and integration tests
+│   │   ├── Dockerfile            # Docker configuration
+│   │   ├── package.json          # Service dependencies
+│   │   └── .env                  # Environment variables for product service
+│   │
+│   ├── /order-service            # Order service
+│   │   ├── /controllers          # Business logic
+│   │   ├── /models               # Database models
+│   │   ├── /routes               # API routes
+│   │   ├── /middleware           # Middleware functions
+│   │   ├── /tests                # Unit and integration tests
+│   │   ├── Dockerfile            # Docker configuration
+│   │   ├── package.json          # Service dependencies
+│   │   └── .env                  # Environment variables for order service
+│   │
+│   ├── /payment-service          # Payment service
+│   │   ├── /controllers          # Business logic
+│   │   ├── /models               # Database models
+│   │   ├── /routes               # API routes
+│   │   ├── /middleware           # Middleware functions
+│   │   ├── /tests                # Unit and integration tests
+│   │   ├── Dockerfile            # Docker configuration
+│   │   ├── package.json          # Service dependencies
+│   │   └── .env                  # Environment variables for payment service
+│   │
+│   ├── /notification-service     # Notification service
+│   │   ├── /controllers          # Business logic
+│   │   ├── /models               # Database models
+│   │   ├── /routes               # API routes
+│   │   ├── /middleware           # Middleware functions
+│   │   ├── /tests                # Unit and integration tests
+│   │   ├── Dockerfile            # Docker configuration
+│   │   ├── package.json          # Service dependencies
+│   │   └── .env                  # Environment variables for notification service
+│
+├── /infrastructure               # Infrastructure as code
+│   ├── /terraform                 # Terraform configurations
+│   │   ├── main.tf               # Main Terraform file
+│   │   ├── variables.tf          # Input variables
+│   │   ├── outputs.tf            # Outputs
+│   │   └── /modules              # Reusable Terraform modules
+│   │       ├── /network          # Networking module
+│   │       ├── /database         # Database module
+│   │       └── /compute          # Compute module (EC2, ECS, etc.)
+│   │
+│   ├── /ansible                  # Ansible playbooks for automation
+│   │   ├── playbook.yml          # Main playbook
+│   │   └── /roles                # Roles for reusable tasks
+│   │
+│   └── /scripts                  # Any other scripts
+│       ├── boto3_scripts.py      # AWS automation scripts using Boto3
+│       └── helper_scripts.py      # Other utility scripts
+│
+├── /tests                        # End-to-end and integration tests
+│   ├── /e2e                       # End-to-end tests
+│   └── /integration               # Integration tests across services
+│
+├── /docs                         # Documentation
+│   ├── architecture.md           # Architecture overview
+│   ├── api_reference.md          # API endpoints reference
+│   └── setup_guide.md            # Setup and installation guide
+│
+├── .gitignore                    # Git ignore file
+├── README.md                     # Project overview and instructions
+└── docker-compose.yml            # Docker Compose file for local development
