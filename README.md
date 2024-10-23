@@ -1,1 +1,1 @@
-*Group-Project*
+*GROUP PROJECT*
